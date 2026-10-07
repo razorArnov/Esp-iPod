@@ -1,0 +1,37 @@
+				idf_component_register(
+    SRCS 
+        "main.c"
+        "bsp_init.c"
+        "audio/audio_player.c"
+        "media/media_scanner.c"
+        "media/video_player.c"
+        "ui/ui_main.c"
+        "ui/ui_now_playing.c"
+        "ui/ui_library.c"
+        "ui/ui_click_wheel.c"
+        "ui/photo_viewer.c"
+        "ui/ui_video_screen.c"
+        "ui/ui_volume_screen.c"
+    INCLUDE_DIRS 
+        "."
+        "audio"
+        "media"
+        "ui"
+    REQUIRES
+        lvgl
+        waveshare__esp32_p4_wifi6_touch_lcd_4_3
+        esp_codec_dev
+        fatfs
+        sdmmc
+        driver
+        esp_driver_sdmmc
+        esp_driver_i2s
+        esp_driver_gpio
+        esp_driver_i2c
+        nvs_flash
+        esp_lvgl_adapter
+        esp_timer
+        esp_ringbuf
+        esp_driver_jpeg
+)
+
